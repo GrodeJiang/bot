@@ -60,8 +60,7 @@ if channel_access_token is None:
 
 line_bot_api = LineBotApi(channel_access_token)
 handler = WebhookHandler(channel_secret)
-#gid = 'C2e36c7e4d4f3f14dee3ce3a9e9607746'
-gid = 'C9142bf924b1343a8dbc4b21d89ad79ee'
+gid = ''
 
 @app.route("/file/<filename>", methods=['GET', 'POST'])
 @app.route("/file_pre/<filename>", methods=['GET', 'POST'])
